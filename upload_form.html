@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<form name="form" id="form" enctype="multipart/form-data" method="post" action="javascript:void(0)">
+      <div class="container">
+          <div class="row pt-2">
+            <div class="col mt-2">User Name</div>
+            <div class="col-8">
+              <input type="text" name="username" id="username" class="form-control input-bg" disabled="true" value="" required="true" minlength="3">
+            </div>
+          </div>
+          <div class="row pt-2">
+            <div class="col mt-2">Name</div>
+            <div class="col-8">
+              <input type="text" name="name" id="name" class="form-control input-bg" value="" required="true" minlength="3">
+            </div>
+          </div>
+       </div>
+       <div class="container-fluid text-center pt-5">
+          <button name="form_b" id="form_b" type="submit" class="btn btn-success">Send Changes</button>
+        </div>
+</form>
+<script type="text/javascript">
+$('#general_settings').submit(function(){
+      fg({form_name:'form'});//fg({form_name:"form",extra:"&user_id=12",button:"button_name",yonlendir:"index.php",adres:"islem.php"});
+});
+</script>
+</body>
+</html>
